@@ -1,0 +1,39 @@
+@import '../../colors.scss';
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+
+  width: 100%;
+
+  color: $primary-color-dark;
+  font-size: 10px;
+
+  border-top: 1px solid $primary-color-dark;
+
+  &__socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0;
+
+    gap: 14px;
+    font-size: 12px;
+
+    .social {
+      color: $primary-color-dark;
+      text-decoration: none;
+      transition: all ease-in-out 150ms;
+    }
+
+    .social:hover {
+      scale: 103%;
+      color: $primary-color;
+    }
+  }
+}
