@@ -1,8 +1,9 @@
 import { Routes, Route } from 'react-router-dom';
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import { DefaultLayout } from './components/defaultLayouts/DefaultLayout';
 import { AppRoutes } from './routes/AppRoutes';
+import { Home } from './components/home/Home';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const App = () => {
   return (
@@ -25,7 +26,7 @@ export const App = () => {
           path={AppRoutes.HOME}
           element={
             <DefaultLayout>
-              <div className="home">Home</div>
+              <Home />
             </DefaultLayout>
           }
         />
