@@ -23,15 +23,27 @@ export const App = () => {
       <Routes>
         <Route
           path={AppRoutes.HOME}
-          element={<DefaultLayout>Domu</DefaultLayout>}
+          element={
+            <DefaultLayout>
+              <div className="home">Home</div>
+            </DefaultLayout>
+          }
         />
         <Route
           path={AppRoutes.LOGIN}
-          element={<DefaultLayout>Login</DefaultLayout>}
+          element={
+            <DefaultLayout>
+              <div className="home">Home</div>
+            </DefaultLayout>
+          }
         />
         <Route
           path={AppRoutes.REGISTRATION}
-          element={<DefaultLayout>Registrace</DefaultLayout>}
+          element={
+            <DefaultLayout>
+              <div className="home">Home</div>
+            </DefaultLayout>
+          }
         />
       </Routes>
     </>

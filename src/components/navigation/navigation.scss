@@ -1,12 +1,19 @@
 @import '../../colors.scss';
 
 .navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
+  width: 100%;
+
   padding: 0 20px;
+
+  z-index: 4;
 
   &__logo {
     height: 24px;
