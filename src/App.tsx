@@ -1,6 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { DefaultLayout } from './components/defaultLayouts/DefaultLayout';
+import { AppRoutes } from './routes/AppRoutes';
 
 export const App = () => {
   return (
@@ -17,6 +19,21 @@ export const App = () => {
         pauseOnHover
         theme="light"
       />
+
+      <Routes>
+        <Route
+          path={AppRoutes.HOME}
+          element={<DefaultLayout>Domu</DefaultLayout>}
+        />
+        <Route
+          path={AppRoutes.LOGIN}
+          element={<DefaultLayout>Login</DefaultLayout>}
+        />
+        <Route
+          path={AppRoutes.REGISTRATION}
+          element={<DefaultLayout>Registrace</DefaultLayout>}
+        />
+      </Routes>
     </>
   );
 };

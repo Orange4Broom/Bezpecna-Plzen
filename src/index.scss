@@ -1,20 +1,27 @@
+@import 'colors.scss';
+
 body {
   box-sizing: border-box;
 
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  width: 100vw;
 
   margin: 0;
   padding: 0;
+  color: $primary-color;
+  font-family: Satoshi;
+  letter-spacing: 0.08rem;
 
   background: url('../img/background.png'), rgba(0, 0, 0, 0.80);
   background-blend-mode: overlay;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto auto, cover;
   background-position: center;
 }
 
 .page-footer {
   margin-top: auto;
 }
+
