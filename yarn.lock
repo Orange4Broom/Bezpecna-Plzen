@@ -838,6 +838,18 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
+"@lordicon/helpers@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@lordicon/helpers/-/helpers-1.0.2.tgz#49265cdd3b6943df26091529634617587fcd4fa8"
+  integrity sha512-qD9m9SsL9jSAV/gPjXXNAirtONEdzOaU1tSHh2B4nFz1yaXaa9Cmj9xN9ZGWqNsN1k2O+v+dO+uraty8xyD+hg==
+
+"@lordicon/react@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@lordicon/react/-/react-1.1.0.tgz#1184c73ba6f9cfac23acfd393a0f8a23624e35e9"
+  integrity sha512-u0KkdLRFFc7jATWy7PgLwHbblVt6dj+iJbi+xLHu1ujR6h7ewVKCX4vLcXao0a2Se861c2Sylm7DojYZZL+jCQ==
+  dependencies:
+    "@lordicon/helpers" "^1.0.2"
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.npmjs.org/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz"
