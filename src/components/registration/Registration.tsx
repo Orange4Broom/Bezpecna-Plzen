@@ -11,7 +11,6 @@ export const Registration = () => {
   const [displayName, setDisplayName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { error, registration } = useRegistration();
 
   useEffect(() => {
@@ -25,6 +24,8 @@ export const Registration = () => {
   const handleRegistration = () => {
     registration({ displayName, email, password });
   };
+
+  console.log(error);
 
   document.body.classList.add('background-blur');
   return (

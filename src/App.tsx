@@ -7,11 +7,9 @@ import 'react-toastify/dist/ReactToastify.css';
 import { RegistrationOutlet } from './components/registration/RegistrationOutlet';
 import { LoginOutlet } from './components/login/LoginOutlet';
 import 'aos/dist/aos.css';
-import { Default } from 'node_modules/react-toastify/dist/utils';
 import { Quiz } from './components/quiz/Quiz';
 
 export const App = () => {
-
   return (
     <>
       <ToastContainer
