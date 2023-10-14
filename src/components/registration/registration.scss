@@ -1,0 +1,150 @@
+@import '../../colors.scss';
+
+.background-blur {
+  backdrop-filter: blur(20px);
+}
+
+.registration {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  padding: 0 20px;
+
+  &__image {
+    width: 100%;
+    max-width: 500px;
+    height: 540px;
+    background: url('../../../img/background.png') rgba(0, 0, 0, 0.70);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: auto auto, cover;
+    background-position: center;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+
+    width: 100%;
+    max-width: 420px;
+    height: 540px;
+
+    padding: 48px;
+
+    color: $secondary-color;
+    background: $primary-color;
+
+    &__login {
+      width: 20px;
+      text-decoration: 1px solid $secondary-color;
+    }
+
+    &__header {
+      font-size: 32px;
+      font-weight: 600;
+      margin-bottom: 40px;
+      color: $secondary-color;
+    }
+
+    &__input {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+
+      width: 100%;
+      font-weight: 500;
+
+      input {
+        height: 32px;
+        width: 100%;
+
+        padding: 0;
+
+        border: none;
+        outline: none;
+        border-bottom: 2px solid $secondary-color;
+
+        font-size: 16px;
+      }
+
+      input:focus {
+        transform: scale(1.02);
+        transition: transform 0.2s ease;
+      }
+    }
+
+    &__link {
+      width: 100%;
+    }
+
+    a {
+      width: auto;
+      font-size: 14px;
+      color: $secondary-color;
+      transition: all 0.5s ease-in-out;
+      
+      &:hover {
+        text-decoration: 1px underline $secondary-color;
+      }
+    }
+
+    .confirm {
+      margin-top: 40px;
+      width: 100%;
+    }
+
+    &__button {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      font-size: 14px;
+      width: 100%;
+      height: 40px;
+      color: $primary-color;
+      border: none;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      font-family: 'Satoshi';
+      cursor: pointer;
+      background: $secondary-color;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .registration {
+    flex-direction: column;
+
+    &__image {
+      max-width: 420px;
+      height: 100px;
+    }
+
+    .form {
+      padding: 28px;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .form__link {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

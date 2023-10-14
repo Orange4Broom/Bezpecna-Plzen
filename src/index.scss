@@ -1,0 +1,69 @@
+@import 'colors.scss';
+
+html {
+  overflow-x: hidden !important;
+  /* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #ffffff #1f1f1f;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #1f1f1f;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 3px;
+    border: 2px solid #000001;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+
+  overflow: hidden !important;
+
+  margin: 0;
+  padding: 0;
+  color: $primary-color;
+  font-family: Satoshi;
+  letter-spacing: 0.08rem;
+  scroll-behavior: smooth !important;
+
+  background: url('../img/background.png'), rgba(0, 0, 0, 0.80);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: auto auto, cover;
+  background-position: center;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.Toastify {
+  overflow-x: hidden !important;
+}
