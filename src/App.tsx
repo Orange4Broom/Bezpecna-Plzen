@@ -11,6 +11,7 @@ import { Default } from 'node_modules/react-toastify/dist/utils';
 import { Quiz } from './components/quiz/Quiz';
 
 export const App = () => {
+
   return (
     <>
       <ToastContainer
