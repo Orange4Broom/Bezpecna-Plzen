@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import { useAuthContext } from '../../hooks/useAuthContext';
 import { APIResponse } from '../../typings/api';
 import { Icon } from '../icon/Icon';
-import { Quiz } from '../../typings/quiz';
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -14,6 +13,10 @@ export const QuizzesGrid = () => {
   const { data, isPending, error }: APIResponse<Quiz[]> =
     useFetchQuizzes('quizzes');
   const [quizzes, setQuizzes] = useState<Quiz[]>([]); // Initialize quizzes state as an empty array
+  interface Quiz {
+    // your existing properties
+    [key: string]: any; // index signature allowing any string key
+  }
 
   useEffect(() => {
     AOS.init({

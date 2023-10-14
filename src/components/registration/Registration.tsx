@@ -11,6 +11,7 @@ export const Registration = () => {
   const [displayName, setDisplayName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { error, registration } = useRegistration();
 
   useEffect(() => {
