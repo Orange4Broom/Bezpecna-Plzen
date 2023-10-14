@@ -14,6 +14,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@lordicon/react": "^1.1.0",
     "@types/aos": "^3.0.5",
     "aos": "^2.3.4",
     "craco": "^0.0.3",

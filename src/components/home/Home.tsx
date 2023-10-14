@@ -1,10 +1,12 @@
 import './home.scss';
 import { useEffect } from 'react';
 import { HashLink } from 'react-router-hash-link';
+import { QuizzesGrid } from '../quizzesGrid/QuizzesGrid';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 export const Home = () => {
+  document.body.classList.remove('background-blur');
   useEffect(() => {
     AOS.init({
       duration: 1000, // Animation duration
@@ -19,21 +21,26 @@ export const Home = () => {
           Bezpečná Plzeň
         </h1>
         <p className="home__paragraph" data-aos="fade-up">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia
-          eligendi sed similique nesciunt sunt voluptatibus eos dolorum fuga
-          eveniet corporis neque qui, rerum, quisquam impedit maxime autem rem
-          quo voluptatum.
+          Vítejte na výukovém portálu krizových situací města Plzně, kde se
+          naučíte vše, co potřebujete, abyste byli připraveni na nečekané
+          události a krizové situace. Bezpečnost a připravenost jsou klíčovými
+          faktory pro efektivní reakci na různé typy krizových situací. <br />{' '}
+          Začněte s prozkoumáním našich kvízů a staňte se připravenými na
+          nejistou budoucnost s jistotou, že zvládnete ochránit sebe i své
+          blízké..
         </p>
         <div className="home__buttons" data-aos="fade-up">
           <HashLink to="/#quizzes">
             <button className="button">Kvízy</button>
           </HashLink>
-          <HashLink to="/quizzesdemo">
+          <HashLink to="/quiz">
             <button className="button">Demo</button>
           </HashLink>
         </div>
       </section>
-      <section className="quizzes">Quizzes</section>
+      <section className="quizzes" id="quizzes">
+        <QuizzesGrid />
+      </section>
     </>
   );
 };

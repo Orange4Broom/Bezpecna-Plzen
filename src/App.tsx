@@ -4,6 +4,11 @@ import { AppRoutes } from './routes/AppRoutes';
 import { Home } from './components/home/Home';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { RegistrationOutlet } from './components/registration/RegistrationOutlet';
+import { LoginOutlet } from './components/login/LoginOutlet';
+import 'aos/dist/aos.css';
+import { Default } from 'node_modules/react-toastify/dist/utils';
+import { Quiz } from './components/quiz/Quiz';
 
 export const App = () => {
   return (
@@ -34,7 +39,7 @@ export const App = () => {
           path={AppRoutes.LOGIN}
           element={
             <DefaultLayout>
-              <div className="home">Home</div>
+              <LoginOutlet />
             </DefaultLayout>
           }
         />
@@ -42,7 +47,16 @@ export const App = () => {
           path={AppRoutes.REGISTRATION}
           element={
             <DefaultLayout>
-              <div className="home">Home</div>
+              <RegistrationOutlet />
+            </DefaultLayout>
+          }
+        />
+
+        <Route
+          path={AppRoutes.QUIZ}
+          element={
+            <DefaultLayout>
+              <Quiz />
             </DefaultLayout>
           }
         />
