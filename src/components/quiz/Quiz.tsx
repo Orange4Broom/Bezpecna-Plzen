@@ -2,6 +2,7 @@ import './quiz.scss';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { AppRoutes } from '../../routes/AppRoutes';
+import watter from '../../../img/watter.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -46,7 +47,7 @@ export const Quiz = () => {
         <div className="quiz__answers">
           <button className="quiz__answer" onClick={handleWrongAnswer}>
             <img
-              src="../../../img/watter.png"
+              src={watter}
               style={{ height: '70px', width: '70px' }}
               alt="voda"
             />
