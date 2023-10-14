@@ -80,21 +80,21 @@ export const Quiz = () => {
             <p className="modal__text">
               <b>Proč bych měl zvážit toto řešení?</b>
               <br />
-              {''} Vyhodit pánev z okna může být v extrémní situaci rychlým a
-              účinným způsobem, jak se pokusit uhasit oheň, a existují důvody,
-              proč byste se mohl rozhodnout tak učinit. V první řadě, když
-              vzniká oheň, je nejdůležitější zachránit vlastní život a zdraví.
-              Vyhození pánve z okna by mohlo odvrátit riziko popálenin a
-              inhalace jedovatých kouřů. Odstranění zdroje ohně - tedy hořící
-              pánve - může zamezit šíření požáru na další části domu nebo bytu.
-              V extrémních situacích nemusíte mít čas na hledání hasicího
-              přístroje. Rychlá reakce může být klíčová k minimalizaci škod.
-              Někdy to může být jediná možnost, pokud nemáte jiné nástroje na
-              uhašení ohně k dispozici. Je však třeba zdůraznit, že vyhození
-              pánve z okna by mělo být až posledním řešením v případě, že nemáte
-              jinou možnost. Mělo by to být provedeno opatrně tak, aby nedošlo k
-              ohrožení bezpečnosti lidí pod oknem, a mělo by být následováno
-              okamžitým kontaktováním hasičů.
+              {''} Pokoušet se uhasit oheň na pánvičce tím, že ji přiklopíte
+              pukličkou, může být dobrý nápad, ale také dost riskantní.
+              Přiklopení pukličkou může způsobit zvýšení tlaku a výbuch. To může
+              vést k vážným popáleninám a zraněním. Puklička může být vyrobená z
+              materiálů, které se mohou stát hořlavými nebo způsobit zvýšení
+              ohně, když jsou vystaveny vysokým teplotám. Puklička zrovna nemusí
+              těsně přiléhat k pánvičce, což by mohlo umožnit kyslíku podporovat
+              hoření. Pouhým přiklopením pukličky na pánvi se nezajistí
+              dostatečné ochlazení oleje nebo hořícího materiálu. To může
+              způsobit, že oheň znovu vzplane, jakmile bude puklička odstraněna.
+              V případě, že vznikne oheň na pánvi, je nejlepší volbou použít
+              hasicí přístroj určený pro olejové požáry, a pokusit se uhasit
+              oheň v souladu s bezpečnostními postupy. Použití pukličky by mělo
+              být poslední možností a mělo by být provedeno s maximální
+              opatrností.
             </p>
             <img
               className="modal__image"
