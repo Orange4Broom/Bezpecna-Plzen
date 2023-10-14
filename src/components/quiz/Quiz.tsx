@@ -3,6 +3,11 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { AppRoutes } from '../../routes/AppRoutes';
 import watter from '../../../img/watter.png';
+import poklice from '../../../img/poklice.png';
+import okno from '../../../img/windows.png';
+import horicipanev from '../../../img/panev.png';
+import correct from '../../../img/correct.jpg';
+import wrong from '../../../img/wrong.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -31,11 +36,7 @@ export const Quiz = () => {
   return (
     <>
       <div className="quiz" data-aos="fade-up">
-        <img
-          className="panev__img"
-          src="../../../img/panev.png"
-          alt="horici panev"
-        />
+        <img className="panev__img" src={horicipanev} alt="horici panev" />
         <span>
           <h1 className="quizz__header">
             Připravuješ si večeři, když v tom najednou začne hořet pánvička s
@@ -55,7 +56,7 @@ export const Quiz = () => {
           </button>
           <button className="quiz__answer" onClick={handleWrongAnswer}>
             <img
-              src="../../../img/poklice.png"
+              src={poklice}
               style={{ height: '50px', width: '100px' }}
               alt="poklice"
             />
@@ -63,7 +64,7 @@ export const Quiz = () => {
           </button>
           <button className="quiz__answer" onClick={handleCorrectAnswer}>
             <img
-              src="../../../img/windows.png"
+              src={okno}
               style={{ height: '70px', width: '70px' }}
               alt="okno"
             />
@@ -97,11 +98,7 @@ export const Quiz = () => {
               být poslední možností a mělo by být provedeno s maximální
               opatrností.
             </p>
-            <img
-              className="modal__image"
-              src="../../../img/correct.jpg"
-              alt="correct"
-            />
+            <img className="modal__image" src={correct} alt="correct" />
           </div>
           <Link to={AppRoutes.HOME}>
             <button className="modal__button">Pokračovat</button>
@@ -130,11 +127,7 @@ export const Quiz = () => {
               hasicí přístroj určený k hašení olejových požárů, poklop na pánvi,
               nebo hasící přikrývku.
             </p>
-            <img
-              className="modal__image"
-              src="../../../img/wrong.jpg"
-              alt="wrong"
-            />
+            <img className="modal__image" src={wrong} alt="wrong" />
           </div>
           <Link to={AppRoutes.HOME}>
             <button className="modal__button">Pokračovat</button>
