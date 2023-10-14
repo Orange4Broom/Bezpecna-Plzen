@@ -6,8 +6,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 export const Quiz = () => {
-  const [correctAnswer, setCorrectAnswer] = useState();
-  const [wrongAnswer, setWrongAnswer] = useState();
+  const [correctAnswer, setCorrectAnswer] = useState(false);
+  const [wrongAnswer, setWrongAnswer] = useState(false);
   const [openModal, setOpenModal] = useState(false);
   function handleCorrectAnswer() {
     setCorrectAnswer(true);
