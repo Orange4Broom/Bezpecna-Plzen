@@ -78,10 +78,23 @@ export const Quiz = () => {
           <h1 className="modal__header">Správně!</h1>
           <div className="modal__content">
             <p className="modal__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              earum magni, corrupti laudantium exercitationem officia nemo
-              inventore molestiae aperiam tenetur delectus sed, eaque
-              repellendus dignissimos quo, numquam excepturi molestias fugiat.
+              <b>Proč bych měl zvážit toto řešení?</b>
+              <br />
+              {''} Vyhodit pánev z okna může být v extrémní situaci rychlým a
+              účinným způsobem, jak se pokusit uhasit oheň, a existují důvody,
+              proč byste se mohl rozhodnout tak učinit. V první řadě, když
+              vzniká oheň, je nejdůležitější zachránit vlastní život a zdraví.
+              Vyhození pánve z okna by mohlo odvrátit riziko popálenin a
+              inhalace jedovatých kouřů. Odstranění zdroje ohně - tedy hořící
+              pánve - může zamezit šíření požáru na další části domu nebo bytu.
+              V extrémních situacích nemusíte mít čas na hledání hasicího
+              přístroje. Rychlá reakce může být klíčová k minimalizaci škod.
+              Někdy to může být jediná možnost, pokud nemáte jiné nástroje na
+              uhašení ohně k dispozici. Je však třeba zdůraznit, že vyhození
+              pánve z okna by mělo být až posledním řešením v případě, že nemáte
+              jinou možnost. Mělo by to být provedeno opatrně tak, aby nedošlo k
+              ohrožení bezpečnosti lidí pod oknem, a mělo by být následováno
+              okamžitým kontaktováním hasičů.
             </p>
             <img
               className="modal__image"
@@ -98,10 +111,23 @@ export const Quiz = () => {
           <h1 className="modal__header">Špatně!</h1>
           <div className="modal__content">
             <p className="modal__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              earum magni, corrupti laudantium exercitationem officia nemo
-              inventore molestiae aperiam tenetur delectus sed, eaque
-              repellendus dignissimos quo, numquam excepturi molestias fugiat.
+              <b>Proč není dobrý nápad hasit oheň na pánvičce vodou?</b>
+              <br />
+              {''} Hasit oheň na pánvičce vodou může být nebezpečné. Přidání
+              vody na horkou pánvičku může způsobit prudké stříkání oleje a
+              hořícího materiálu, což může vést k šíření ohně na jiná místa v
+              kuchyni nebo způsobit popáleniny. Když voda narazí na velmi horký
+              olej, může se okamžitě přeměnit na páru, což může vést k výbuchu a
+              zranění osob v okolí.
+              <br />
+              {''}
+              <br />
+              {''}
+              <b>Jak bych měl tedy situaci vyřešit?</b>
+              <br />
+              {''}V případě, že hořící pánvičku musíte uhasit, je lepší použít
+              hasicí přístroj určený k hašení olejových požárů, poklop na pánvi,
+              nebo hasící přikrývku.
             </p>
             <img
               className="modal__image"
